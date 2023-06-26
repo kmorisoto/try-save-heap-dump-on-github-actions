@@ -21,7 +21,7 @@ jobs:
           cache: 'gradle'
 
       - run: |
-          ./gradlew help "-Dorg.gradle.jvmargs=-Xmx2m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp/heapdump.hprof"
+          ./gradlew help "-Dorg.gradle.jvmargs=-Xmx20m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp/heapdump.hprof"
 
       - name: Store Reports
         if: always()
