@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  update_db_docs:
+  try_heap_dump:
     runs-on: ubuntu-latest
     timeout-minutes: 20
 
